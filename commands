@@ -1,0 +1,63 @@
+
+
+	git init  	// initialize Local Git Repository
+	
+	git add <file> 	// Add File(s) To Index
+
+	git status	// Check Status Of Working Tree
+
+	git commit	// Commit Changes In Index
+
+	git push	// Push To Remote Repository
+
+	git pull 	// Pull(get) Latest From Remote Repository
+
+	git clone	// Clone Repository Into A New Directory
+
+	// Not understand
+	git config --global user.name ':Name'
+	
+	git config --global user.email ':Email'
+
+	---------------------------------------------------------------
+
+	git rm --cached <file> 	// Remove File(s?) After 'git add' command
+
+	git add *.<extension>	// Add Files Only That <extension>
+	
+	git add .	// Add Everything in Directory
+
+	git add <FolderName>/	// Add Folder and Everything Into It
+
+	git commit -m "Some text"	// Commiting Text
+
+	----------------------------------------------------------------
+
+	.gitignore	// File that created to mark files or dir-s that  				// we don't want to add into remote repository
+	/* Example
+
+		open .gitignore
+			
+			<FIleName>	// For File
+			/<FolderName>	// For Directory and all files into
+	*/
+
+	-------------------------------------------------------------
+
+	// BRANCHES
+
+	git branch <name>	// Create new branch Ex. login
+	
+	git checkout <BranchName>	// Switch to branch with name 						// <BranchName>
+
+	git merge <BranchName>	// On the 'master' branch this comand will 					// merge commits on the <BranchName> 					// branch when the work into <BranchName>  					// is donned 
+
+	------------------------------------------------------------
+
+	// Remote repository
+
+	git remote	// Get list og remote repositories
+
+	git remote add <RemoteRepoName> <RemoteRepoURL>	//initialize 								//remote repository
+
+	git push -u origin master	//  Initial push into Repository
