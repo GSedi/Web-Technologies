@@ -1,4 +1,93 @@
 body {
     margin: 0px;
     max-width: 100vw;
+    font-size: 1rem;
+    background-color: #e5e5e5;
+}
+
+.header {
+    height: 90vh;
+    overflow: hidden;
+}
+
+.background-image {
+    /*    
+    background-image: linear-gradient(45deg,rgba(132,13,121,.88),rgba(208,44,180,.31)), 
+            url("https://demos.creative-tim.com/marketplace/material-kit-pro/assets/img/kit/pro/bg0.jpg") 
+            no-repeat center fixed; 
+    */
+    
+    background-image: url("https://demos.creative-tim.com/marketplace/material-kit-pro/assets/img/kit/pro/bg0.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page_header {
+    background-position: 50%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.header-filter {
+    position: relative;
+}
+
+.header-filter::after {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+}
+
+.centainer {
+    position: relative;
+    z-index: 2;
+}
+
+.brand {
+    color: #fff;
+    text-align: center;
+}
+
+.brand h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 4.2rem;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+}
+
+.brand h3 {
+    font-size: 1.313rem;
+    max-width: 500px;
+    margin: 10px auto 0;
+}
+
+.main {
+    background: #fff;
+    position: relative;
+    z-index: 3;
+    min-height: 100vh;
+}
+
+.main-rised {
+    margin: -60px 30px 0;
+    border-radius: 6px;
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,.14),0 6px 30px 5px rgba(0,0,0,.12),0 8px 10px -5px rgba(0,0,0,.2);
+}
+
+.footer {
+    min-height: 10vh;
 }
