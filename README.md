@@ -1,4 +1,4 @@
-# Wev Technologies Project
+# Web Technologies Project
 
  **Project by ...**
 - [Sedi Gamidov](https://github.com/GSedi)
