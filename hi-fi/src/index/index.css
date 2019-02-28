@@ -91,3 +91,61 @@ body {
 .footer {
     min-height: 10vh;
 }
+
+.section {
+    padding: 70px 0;
+}
+
+.features {
+    padding-top: 30px;
+    bottom: 0px;
+    text-align: center;
+}
+
+.description {
+    color: #999;
+}
+
+.info {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 70px 0 30px
+}
+
+.info .icon>i {
+    font-size: 3.85rem;
+}
+
+.color_rose {
+    color: #e91e63;
+}
+
+.color_info {
+    color: #00bcd4;
+}
+
+.color_success {
+    color: #4caf50;
+}
+
+.info-title {
+    color: #3c4858;
+    margin: 1.75rem 0 .875rem;
+}
+
+.info p {
+    color: #999;
+}
+
+.image-container {
+    height: 560px;
+    position: relative;
+}
+
+.image-container .car_image {
+    width: auto;
+    left: 50px;
+    top: 0;
+    height: 100%;
+    position: absolute;
+}
