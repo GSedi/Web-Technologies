@@ -13,12 +13,39 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+    <link type="text/css" rel="stylesheet" href="./../css/materialize.min.css"  media="screen,projection"/>
+
     <title>Main</title>
 
     <link rel="stylesheet" href="./../css/index.css">
     <link rel="stylesheet" href="./../css/util.css">
 </head>
   <body>
+
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!">Schedule</a></li>
+      <li><a href="#!">Profile</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Settings</a></li>
+    </ul>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Car Shering</a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Top Cars</a></li>
+              <li><a href="#">Contacts</a></li>
+              <!-- Dropdown Trigger -->
+              <li><a class="dropdown-trigger" href="#" data-target="dropdown1">Profile<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
 
     <div class="header page_header background-image">
       <div class="container">
@@ -169,8 +196,16 @@
 
     <div class="footer dark_color">
       <div class="container">
-        <div class="row">
-          
+        <div class="row text-center">
+          <div class="col-md-4">
+            Something
+          </div>
+          <div class="col-md-4">
+            Something
+          </div>
+          <div class="col-md-4">
+            Something
+          </div>
         </div>
       </div>
     </div>
