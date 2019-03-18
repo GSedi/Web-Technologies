@@ -7,6 +7,12 @@ const routes: Routes = [
   // { path: '', redirectTo:'/gallery', pathMatch: 'full'},
   // { path: 'gallery', component: GalleryComponent},
   // { path: 'image/:id', component: CarImageComponent}
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
+
+const routes: Routes = [
+  {path: 'login', component: LoginComponent},
+  {path: 'register', component: RegisterComponent},
 ];
 
 @NgModule({
