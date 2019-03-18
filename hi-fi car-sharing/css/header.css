@@ -1,0 +1,14 @@
+.header {
+    height: 100vh;
+    color: #FEFEFE;
+    background-size: cover;
+    background: linear-gradient(135deg,rgba(194, 63, 84, .88),rgba(107, 5, 4,.31)), url("https://demos.creative-tim.com/marketplace/material-kit-pro/assets/img/kit/pro/bg0.jpg") no-repeat center;
+}
+
+.header h1 {
+    font-size: 5rem;
+}
+
+.header h4 {
+    font-size: 1.4rem;
+}
