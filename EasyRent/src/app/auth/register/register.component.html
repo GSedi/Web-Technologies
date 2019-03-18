@@ -1,0 +1,83 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <header class="card-header">
+          <a routerLink="/login" class="float-right btn btn-outline-primary mt-1">Sign in</a>
+          <h4 class="card-title mt-2">Sign up</h4>
+        </header>
+        <article class="card-body">
+          <form [formGroup]="registerForm" (ngSubmit)="handleSubmit()">
+            <div class="form-row">
+              <div class="col form-group">
+                <label>First name </label>   
+                <input type="text" class="form-control" placeholder="" formControlName="firstName">
+                <div *ngIf="submitted && registerForm.controls.firstName.errors" class="alert alert-danger" role="alert">
+                  <div *ngIf="registerForm.controls.firstName.errors.required">Your First Name is required</div>
+                </div>
+              </div>
+              <div class="col form-group">
+                <label>Last name</label>
+                <input type="text" class="form-control" placeholder=" " formControlName="lastName">
+                <div *ngIf="submitted && registerForm.controls.lastName.errors" class="alert alert-danger" role="alert">
+                  <div *ngIf="registerForm.controls.lastName.errors.required">Your Last Name is required</div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email address</label>
+              <input type="email" class="form-control" placeholder="" formControlName="email">
+              <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+              <div *ngIf="submitted && registerForm.controls.email.errors" class="alert alert-danger" role="alert">
+                <div *ngIf="registerForm.controls.email.errors.required">Your Email is required</div>
+                <div *ngIf="registerForm.controls.email.errors.email">Not type of Email: example@asd.com</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Phone number</label>
+              <input type="email" class="form-control" placeholder="" formControlName="email">
+              <div *ngIf="submitted && registerForm.controls.phone.errors" class="alert alert-danger" role="alert">
+                <div *ngIf="registerForm.controls.phone.errors.required">Your Email is required</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Birth Date</label>
+              <mat-form-field>
+                <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+            </div>
+            <div class="form-group">
+              <label class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" formControlName="gender" value="male">
+                <span class="form-check-label"> Male </span>
+              </label>
+              <label class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" formControlName="gender" value="female">
+                <span class="form-check-label"> Female</span>
+              </label>
+              <div *ngIf="submitted && registerForm.controls.gender.errors" class="alert alert-danger" role="alert">
+                <div *ngIf="registerForm.controls.gender.errors.required">Your Gender is required</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Create password</label>
+              <input class="form-control" type="password" formControlName="password">
+              <div *ngIf="submitted && registerForm.controls.password.errors" class="alert alert-danger" role="alert">
+                <div *ngIf="registerForm.controls.password.errors.required">Your Password is required</div>
+                <div *ngIf="registerForm.controls.password.errors.min">Password min length is 6</div>
+                <div *ngIf="registerForm.controls.password.errors.max">Password max length is 16</div>
+              </div>
+            </div> 
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-block"> Register  </button>
+            </div>
+            <small class="text-muted">By clicking the 'Sign Up' button, you confirm that you accept our <br> Terms of use and Privacy Policy.</small>                                          
+          </form>
+        </article>
+        <div class="border-top card-body text-center">Have an account? <a routerLink="/login">Log In</a></div>
+      </div>
+    </div> 
+  </div>
+</div> 

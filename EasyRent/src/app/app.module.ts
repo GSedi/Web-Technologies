@@ -1,8 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RegisterComponent } from './auth/register/register.component';
+import { LoginComponent } from './auth/login/login.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatNativeDateModule } from '@angular/material/core';
 import { MyButtonComponent } from './atoms/my-button/my-button.component';
 import { MyNavbarComponent } from './components/my-navbar/my-navbar.component';
 import { MyHeaderComponent } from './components/my-header/my-header.component';
@@ -17,6 +25,8 @@ import { MyHomePageComponent } from './my-home-page/my-home-page.component';
 @NgModule({
   declarations: [
     AppComponent,
+    RegisterComponent,
+    LoginComponent,
     MyButtonComponent,
     MyNavbarComponent,
     MyHeaderComponent,
@@ -30,7 +40,12 @@ import { MyHomePageComponent } from './my-home-page/my-home-page.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatNativeDateModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
