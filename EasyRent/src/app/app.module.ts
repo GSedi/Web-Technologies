@@ -7,6 +7,15 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+// import { NavbarComponent } from './navbar/navbar.component';
+
+// import { AlertModule } from 'ngx-bootstrap';
+
+// import { ImageService } from './rent/image.service';
+// import { ImageFilterPipe } from './rent/filter.pipe';
+
+// import { GalleryComponent } from './rent/gallery/gallery.component';
+// import { CarImageComponent } from './rent/car-image/car-image.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { LoginComponent } from './auth/login/login.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -25,6 +34,10 @@ import { MyHomePageComponent } from './my-home-page/my-home-page.component';
 @NgModule({
   declarations: [
     AppComponent,
+    // NavbarComponent,
+    // GalleryComponent,
+    // CarImageComponent
+    // ImageFilterPipe
     RegisterComponent,
     LoginComponent,
     MyButtonComponent,
@@ -41,13 +54,19 @@ import { MyHomePageComponent } from './my-home-page/my-home-page.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    // FormsModule, 
+    // AlertModule.forRoot()
+
+  ],
+  providers: [
+    //ImageService,
+    //ImageFilterPipe
     HttpClientModule,
     ReactiveFormsModule,
     MatDatepickerModule,
     MatFormFieldModule,
     MatNativeDateModule,
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,26 @@
+<div class="row">
+  <nav class="navbar navbar-light bg-light">
+      <form class="form-inline">
+          <h3>Filter By :</h3>
+          <div class="btn-group mr-2" role="group" aria-label="All">
+              <button type="button"  class="btn btn-info" [class.active]="filterBy=='all'" (click)="filterBy='all'">All</button>
+          </div>
+          <div class="btn-group mr-2" role="group" aria-label="Econom group">
+              <button type="button" class="btn btn-info" [class.active]="filterBy=='econom'" (click)="filterBy='econom'">Econom</button>
+          </div>
+          <div class="btn-group mr-2" role="group" aria-label="Premium group">
+              <button type="button" class="btn btn-info" [class.active]="filterBy=='premium'" (click)="filterBy='premium'">Premium</button>
+          </div>
+          <div class="btn-group" role="group" aria-label="Luxury group">
+              <button type="button" class="btn btn-info" [class.active]="filterBy=='luxury'" (click)="filterBy='luxury'">Luxury</button>
+          </div>
+      </form>
+  </nav>
+  <ul id="thumbnailsList">
+    <li *ngFor="let image of (visibleImages | imageFilter:filterBy)">
+      <a [routerLink] = "['/image', image.id]">
+        <img src="{{image.url}}" class="tn" width="200" height="160">
+      </a>
+    </li>
+  </ul>
+</div>
