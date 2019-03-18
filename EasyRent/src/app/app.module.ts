@@ -11,12 +11,32 @@ import { RegisterComponent } from './auth/register/register.component';
 import { LoginComponent } from './auth/login/login.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatNativeDateModule } from '@angular/material/core';
+import { MyButtonComponent } from './atoms/my-button/my-button.component';
+import { MyNavbarComponent } from './components/my-navbar/my-navbar.component';
+import { MyHeaderComponent } from './components/my-header/my-header.component';
+import { MyCarouselComponent } from './components/my-carousel/my-carousel.component';
+import { MyJumbotronComponent } from './components/my-jumbotron/my-jumbotron.component';
+import { MyFooterComponent } from './components/my-footer/my-footer.component';
+import { MyFeaturesComponent } from './components/my-features/my-features.component';
+import { MyMainFeatureComponent } from './components/my-main-feature/my-main-feature.component';
+import { MyMainComponent } from './components/my-main/my-main.component';
+import { MyHomePageComponent } from './my-home-page/my-home-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
     LoginComponent,
+    MyButtonComponent,
+    MyNavbarComponent,
+    MyHeaderComponent,
+    MyCarouselComponent,
+    MyJumbotronComponent,
+    MyFooterComponent,
+    MyFeaturesComponent,
+    MyMainFeatureComponent,
+    MyMainComponent,
+    MyHomePageComponent
   ],
   imports: [
     BrowserModule,
