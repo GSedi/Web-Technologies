@@ -1,0 +1,117 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "firstName": "Sedi",
+      "lastName": "Gamidov",
+      "email": "sedi@test.com",
+      "gender": "male",
+      "password": "asdfasdf",
+      "id": 1
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test@example.com",
+      "gender": "male",
+      "password": "sss",
+      "id": 2
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test@example.com",
+      "gender": "male",
+      "password": "sssasasaas",
+      "id": 3
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test@example.com",
+      "gender": "male",
+      "password": "sssasasaas",
+      "id": 4
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test@example.com",
+      "gender": "male",
+      "password": "sssasasaas",
+      "id": 5
+    },
+    {
+      "firstName": "aasdfasdf",
+      "lastName": "vavdas",
+      "email": "sadas@ads.asd",
+      "gender": "male",
+      "password": "asdfasdf",
+      "id": 6
+    },
+    {
+      "firstName": "zxvzx",
+      "lastName": "zsdvzssa",
+      "email": "asdfasdf@sd.asd",
+      "gender": "male",
+      "password": "vzxcvcvxzxc",
+      "id": 7
+    },
+    {
+      "firstName": "as,mnmsad",
+      "lastName": "smvms",
+      "email": "sndmdn@sdd.com",
+      "gender": "male",
+      "password": "sasdasd",
+      "id": 8
+    },
+    {
+      "firstName": "sdsd",
+      "lastName": "dmvsm",
+      "email": "asd@asd.asd",
+      "gender": "female",
+      "password": "zzxzxzx",
+      "id": 9
+    },
+    {
+      "firstName": "ascds",
+      "lastName": "adsas",
+      "email": "aasa@cdd.cd",
+      "gender": "male",
+      "password": "asdasd",
+      "id": 10
+    },
+    {
+      "firstName": "ssss",
+      "lastName": "asasaa",
+      "email": "aaascas@ass.com",
+      "gender": "male",
+      "password": "aaasas",
+      "id": 11
+    },
+    {
+      "firstName": "sdsdc",
+      "lastName": "xxc c",
+      "email": "sddscd@dsd.ads",
+      "gender": "male",
+      "password": "sdcdsd",
+      "id": 12
+    }
+  ]
+}
