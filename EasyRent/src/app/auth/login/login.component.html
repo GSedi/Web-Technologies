@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <header class="card-header">
+          <a routerLink="/register" class="float-right btn btn-outline-primary">Sign up</a>
+          <h4 class="card-title mb-4 mt-1">Sign in</h4>
+        </header>
+        <article class="card-body">
+          <form [formGroup]="loginForm" (ngSubmit)="handleSubmit()">
+            <div class="form-group">
+              <label>Your email</label>
+              <input name="" class="form-control" placeholder="Email" type="email" formControlName="email">
+              <div *ngIf="submitted && loginForm.controls.email.errors" class="alert alert-danger" role="alert">
+                <div *ngIf="loginForm.controls.email.errors.required">Your Email is required</div>
+                <div *ngIf="loginForm.controls.email.errors.email">Not type of Email: example@asd.com</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <a class="float-right" href="#">Forgot?</a>
+              <label>Your password</label>
+              <input class="form-control" placeholder="******" type="password" formControlName="password">
+              <div *ngIf="submitted && loginForm.controls.password.errors" class="alert alert-danger" role="alert">
+                <div *ngIf="loginForm.controls.password.errors.required">Your Password is required</div>
+                <div *ngIf="loginForm.controls.password.errors.min">Password min length is 6</div>
+                <div *ngIf="loginForm.controls.password.errors.max">Password max length is 16</div>
+              </div>
+            </div>
+            <div class="form-group"> 
+              <div class="checkbox">
+                <label> <input type="checkbox"> Save password </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-block"> Login  </button>
+            </div>        
+          </form>
+        </article>
+      </div>    
+    </div>
+  </div> 
+</div> 
