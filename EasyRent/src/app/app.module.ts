@@ -56,16 +56,17 @@ import { MyHomePageComponent } from './my-home-page/my-home-page.component';
     AppRoutingModule,
     // FormsModule, 
     // AlertModule.forRoot()
-
-  ],
-  providers: [
-    //ImageService,
-    //ImageFilterPipe
+    ReactiveFormsModule,
     HttpClientModule,
     ReactiveFormsModule,
     MatDatepickerModule,
     MatFormFieldModule,
     MatNativeDateModule,
+
+  ],
+  providers: [
+    //ImageService,
+    //ImageFilterPipe
   ],
   bootstrap: [AppComponent]
 })
