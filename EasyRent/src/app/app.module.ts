@@ -30,6 +30,7 @@ import { MyFeaturesComponent } from './components/my-features/my-features.compon
 import { MyMainFeatureComponent } from './components/my-main-feature/my-main-feature.component';
 import { MyMainComponent } from './components/my-main/my-main.component';
 import { MyHomePageComponent } from './my-home-page/my-home-page.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { MyHomePageComponent } from './my-home-page/my-home-page.component';
     MyFeaturesComponent,
     MyMainFeatureComponent,
     MyMainComponent,
-    MyHomePageComponent
+    MyHomePageComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
