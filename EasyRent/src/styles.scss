@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #FEFEFE;
+    width: 100vw;
+    height: 150vh;
+  }
+  
+  .font-muli {
+    font-family: 'Muli', sans-serif !important;
+  }
+  
+  .font-overpass {
+    font-family: 'Overpass', sans-serif !important;
+  }
+  
+  .font-oxygen {
+    font-family: 'Oxygen', sans-serif !important;
+  }
+  
+  .upper {
+    text-transform: uppercase !important;
+  }
+  
+  .color-white {
+    color: #FEFEFE !important;
+  }
+  
+  .color-d-purple {
+    color: #150712 !important;
+  }
+  
+  .color-gray {
+    color: #675964 !important;
+  }
+  
+  .color-pink {
+    color: #E91E63 !important;
+  }
+  
+  .color-blue {
+    color: #00BCD4 !important;
+  }
+  
+  .color-green {
+    color: #4CAF50 !important;
+  }
+  
+  .color-violet {
+    color: #4A1942 !important;
+  }
+  
+  .carousel-section {
+    padding-top: 56px;
+  }
