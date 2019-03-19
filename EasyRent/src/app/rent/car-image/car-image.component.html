@@ -1,18 +1,19 @@
-<div class="row">
+<app-my-navbar></app-my-navbar>
+<app-my-header></app-my-header>
+<div class="row justify-content-center pt-4">
   <div class="col-md-12">
     <div [ngStyle]="{'background-image':'url('+ image.url+')'}" class="img-container paper">
   </div>
 </div>
-<div class="row">
-  <div class="col-md-12 caption-row">
-    <span id="caption">
-      {{image.caption}}
-      <p class="price">
-        Price: {{image.price}}
-      </p>
-      <p>
-        General Info: {{image.info}}
-      </p>
-    </span>
-  </div>
+<div class="col-md-12 caption-row">
+  <span id="caption">
+    {{image.caption}}
+    <p class="price">
+      Price: {{image.price}}
+    </p>
+    <p>
+      General Info: {{image.info}}
+    </p>
+  </span>
 </div>
+<app-my-footer></app-my-footer>

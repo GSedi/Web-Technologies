@@ -5,7 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-car-image',
   templateUrl: './car-image.component.html',
-  styleUrls: ['./car-image.component.sass']
+  styleUrls: ['./car-image.component.scss']
 })
 export class CarImageComponent implements OnInit {
   image:any

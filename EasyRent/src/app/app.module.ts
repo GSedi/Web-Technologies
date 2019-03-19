@@ -11,11 +11,11 @@ import { AppComponent } from './app.component';
 
 // import { AlertModule } from 'ngx-bootstrap';
 
-// import { ImageService } from './rent/image.service';
-// import { ImageFilterPipe } from './rent/filter.pipe';
+import { ImageService } from './rent/image.service';
+import { ImageFilterPipe } from './rent/filter.pipe';
 
-// import { GalleryComponent } from './rent/gallery/gallery.component';
-// import { CarImageComponent } from './rent/car-image/car-image.component';
+import { GalleryComponent } from './rent/gallery/gallery.component';
+import { CarImageComponent } from './rent/car-image/car-image.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { LoginComponent } from './auth/login/login.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -36,9 +36,9 @@ import { ProfileComponent } from './profile/profile.component';
   declarations: [
     AppComponent,
     // NavbarComponent,
-    // GalleryComponent,
-    // CarImageComponent
-    // ImageFilterPipe
+    GalleryComponent,
+    CarImageComponent,
+    ImageFilterPipe,
     RegisterComponent,
     LoginComponent,
     MyButtonComponent,

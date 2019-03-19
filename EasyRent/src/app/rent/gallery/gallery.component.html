@@ -1,6 +1,8 @@
+<app-my-navbar></app-my-navbar>
+<app-my-header></app-my-header>
 <div class="row">
   <nav class="navbar navbar-light bg-light">
-      <form class="form-inline">
+      <div class="form-inline">
           <h3>Filter By :</h3>
           <div class="btn-group mr-2" role="group" aria-label="All">
               <button type="button"  class="btn btn-info" [class.active]="filterBy=='all'" (click)="filterBy='all'">All</button>
@@ -14,7 +16,7 @@
           <div class="btn-group" role="group" aria-label="Luxury group">
               <button type="button" class="btn btn-info" [class.active]="filterBy=='luxury'" (click)="filterBy='luxury'">Luxury</button>
           </div>
-      </form>
+      </div>
   </nav>
   <ul id="thumbnailsList">
     <li *ngFor="let image of (visibleImages | imageFilter:filterBy)">
@@ -24,3 +26,4 @@
     </li>
   </ul>
 </div>
+<app-my-footer></app-my-footer>
