@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../data.service';
 import { FormBuilder, FormGroup, Validators, FormControl} from '@angular/forms';
 import { Router } from '@angular/router';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-login',
@@ -40,8 +41,18 @@ export class LoginComponent implements OnInit {
     const prms =  this.data.login(this.loginForm)    
     prms.then(
       res => {
-        this.success =  true;
-        alert("Succesfully logged in")
+        if (res['ok']){
+          this.success =  true;
+          alert("Succesfully logged in")
+          environment.user = res['obj']
+          this.router.navigate(['/'])
+        }
+        else{
+          alert("Credentials no correct")
+          environment.user = res['obj']
+          return
+        }
+
       })
   }
 

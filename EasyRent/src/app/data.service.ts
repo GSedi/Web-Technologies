@@ -40,10 +40,22 @@ export class DataService {
     return new Promise((resolve, reject) => {
       this.http.get('http://localhost:3000/users')
         .subscribe(res => {
-          if (this.userMatch(res, user)){
-            console.log('yeeee')
-            resolve(res);
-          }
+          let temp = this.userMatch(res, user)
+          resolve(temp)
+          // if (this.userMatch(res, user).ok){
+          //   console.log('yeeee')
+          //   // resolve(res);
+          //   data = {
+          //     status: true,
+          //     obj: user
+          //   }
+          //   resolve(data)
+          // }
+          // data = {
+          //   status: false,
+          //   obj: null
+          // }
+          // resolve(data)
         }, (err) => {
           console.log("Noooo")
           reject(err);
@@ -54,11 +66,25 @@ export class DataService {
   userMatch(users, user){
     // console.log(users)
     let ok = false
+    let obj = null;
     users.forEach(item => {
       if ((item.email == user.email) && (item.password == user.password)){
         ok = true
+        obj = item
       }
     });
-    return ok
+    return {ok, obj}
+  }
+
+  getCars(){
+    return new Promise((resolve, reject) => {
+      this.http.get('http://localhost:3000/cars')
+        .subscribe(res => {
+          resolve(res)
+        }, (err) => {
+          console.log("Noooo")
+          reject(err);
+        });
+      });
   }
 }

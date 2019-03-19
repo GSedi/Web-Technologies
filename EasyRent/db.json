@@ -25,5 +25,25 @@
       "password": "asdfasdf",
       "id": 1
     }
+  ],
+  "cars": [
+    {
+      "name": "Mercedes",
+      "description": "Some text",
+      "img": "../../../assets/img/mercedes.jpg",
+      "category": 1
+    },
+    {
+      "name": "BMW",
+      "description": "Some text",
+      "img": "../../../assets/img/bmw.jpg",
+      "category": 1
+    },
+    {
+      "name": "Tesla",
+      "description": "Some text",
+      "img": "../../../assets/img/tesla.jpg",
+      "category": 1
+    }
   ]
 }

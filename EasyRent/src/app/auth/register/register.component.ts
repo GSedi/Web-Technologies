@@ -48,7 +48,7 @@ export class RegisterComponent implements OnInit {
     prms.then(
       res => {
         this.success =  true;
-        this.router.navigate(['/'])
+        this.router.navigate(['/login'])
       })
   }
 

@@ -31,6 +31,8 @@ import { MyMainFeatureComponent } from './components/my-main-feature/my-main-fea
 import { MyMainComponent } from './components/my-main/my-main.component';
 import { MyHomePageComponent } from './my-home-page/my-home-page.component';
 import { ProfileComponent } from './profile/profile.component';
+import { LogoutComponent } from './auth/logout/logout.component';
+
 
 @NgModule({
   declarations: [
@@ -51,7 +53,8 @@ import { ProfileComponent } from './profile/profile.component';
     MyMainFeatureComponent,
     MyMainComponent,
     MyHomePageComponent,
-    ProfileComponent
+    ProfileComponent,
+    LogoutComponent,
   ],
   imports: [
     BrowserModule,

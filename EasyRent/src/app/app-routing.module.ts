@@ -6,13 +6,14 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { MyMainComponent } from './components/my-main/my-main.component';
 import { ProfileComponent } from './profile/profile.component';
+import { LogoutComponent } from './auth/logout/logout.component';
 
 const routes: Routes = [
   {path: '', component: MyMainComponent},
   {path: 'login', component: LoginComponent},
+  {path: 'logout', component: LogoutComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'profile', component: ProfileComponent},
-  // { path: '', redirectTo:'/gallery', pathMatch: 'full'},
   { path: 'gallery', component: GalleryComponent},
   { path: 'image/:id', component: CarImageComponent}
 ];

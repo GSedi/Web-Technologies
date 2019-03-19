@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../data.service';
 
 @Component({
   selector: 'app-my-carousel',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./my-carousel.component.scss']
 })
 export class MyCarouselComponent implements OnInit {
+  
+  cars: Object;
 
-  constructor() { }
+  constructor(private data: DataService) { }
 
   ngOnInit() {
+    this.data.getCars().then(data => {
+      this.cars = data;
+    })
   }
 
 }
